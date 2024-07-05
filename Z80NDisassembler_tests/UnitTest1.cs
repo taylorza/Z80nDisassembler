@@ -10,6 +10,8 @@ namespace Z80nDisassembler_tests
             new Test([0x00], "nop"),
             new Test([0x01, 0xef, 0xbe], "ld bc, $beef"),
             new Test([0x10, 0x05], "djnz $0007"),
+            new Test([0x44], "ld b, h"),
+            new Test([0x45], "ld b, l"),
 
             new Test([0xcb, 0x06], "rlc (hl)"),
             new Test([0xcb, 0x07], "rlc a"),

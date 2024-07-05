@@ -2,7 +2,7 @@
   "profiles": {
     "Z80nDisassembler": {
       "commandName": "Project",
-      "commandLineArgs": "D:\\Source\\ZXNext\\tbblue\\machines\\next\\enNextMf.rom -org=0x2000"
+      "commandLineArgs": "D:\\Source\\ZXNext\\tbblue\\machines\\next\\enNextZX.rom"
     }
   }
 }
