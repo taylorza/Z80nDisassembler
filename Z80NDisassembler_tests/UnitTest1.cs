@@ -49,7 +49,7 @@ namespace Z80nDisassembler_tests
             new Test([0xed, 0x35, 0xef, 0xbe], "add de, $beef"),
             new Test([0xed, 0x36, 0xef, 0xbe], "add bc, $beef"),
             
-            new Test([0xed, 0x8a, 0xef, 0xbe], "push $beef"),
+            new Test([0xed, 0x8a, 0xbe, 0xef], "push $beef"),
 
             new Test([0xed, 0x90], "outinb"),
             new Test([0xed, 0x91, 0x56, 0x42], "nextreg $56, $42"),

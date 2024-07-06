@@ -187,7 +187,7 @@ namespace Z80nDisassembler
                         case 0x34: nn = GetWord(); asm.Append($"ADD HL, ${nn:X4}"); break;
                         case 0x35: nn = GetWord(); asm.Append($"ADD DE, ${nn:X4}"); break;
                         case 0x36: nn = GetWord(); asm.Append($"ADD BC, ${nn:X4}"); break;
-                        case 0x8a: nn = GetWord(); asm.Append($"PUSH ${nn:X4}"); break;
+                        case 0x8a: nn = GetWord(); nn = (ushort)((nn >> 8) | (nn << 8)); asm.Append($"PUSH ${nn:X4}"); break;
                         case 0x90: asm.Append("OUTINB"); break;
                         case 0x91: n = GetByte(); n2 = GetByte(); asm.Append($"NEXTREG ${n:X2}, ${n2:X2}"); break;
                         case 0x92: n = GetByte(); asm.Append($"NEXTREG ${n:X2}, A"); break;
