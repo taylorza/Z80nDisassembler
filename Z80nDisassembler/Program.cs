@@ -5,7 +5,7 @@ namespace Z80nDisassembler
 {
     internal class Program
     {
-        const string Version = "0.1";
+        const string Version = "0.1a";
         static void Main(string[] args)
         {
             int org = 0;
